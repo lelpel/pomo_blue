@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">PomoBLUE</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_board_selector">BoardSelectorActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_task_selector">TaskSelectorActivity</string>
+    <string name="title_activity_stats">Statistics</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="pinned">Pinned</string>
+    <string name="recent">Recent</string>
+    <string name="personal">Personal</string>
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_work_duration">Work session duration</string>
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="boards">Boards</string>
+    <string name="tasks">Tasks</string>
+    <string name="stats">Stats</string>
+    <string name="settings">Settings</string>
+    <string name="share">Share</string>
+
+    <string name="start">Start</string>
+    <string name="interrupt">Pause</string>
+    <string name="stop">Stop</string>
+
+    <string name="no_task">No task</string>
+
+    <string name="timer_notification_title_template">Timer: %1$s</string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="timer_notification_placeholder_text_template">You said %1$s and lorem ipsum dolor
+        sit amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit vel semper
+        venenatis, magna odio volutpat velit, at ullamcorper nulla lacus sed turpis. Pellentesque
+        vitae metus elit, nec tincidunt tellus. Integer sed nisl sem, ullamcorper ornare lacus. Duis
+        ac mauris sed massa congue volutpat. Donec sed erat sit amet turpis viverra rhoncus sit amet
+        nec magna. Donec lacinia ligula at libero volutpat volutpat nec nec tortor.
+    </string>
+
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+    <string name="title_activity_swipe_task">SwipeTaskActivity</string>
+    <string name="title_activity_swiped_tasks">Tasks</string>
+
+    <string name="add_task_positive">Add</string>
+    <string name="add_task_negative">Cancel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="task_name_label">Task name</string>
+    <string name="deadline_label">Deadline</string>
+    <string name="deadine_date">Deadline Date</string>
+    <string name="deadine_time">Deadline Time</string>
+    <string name="add_task_header">Add Task</string>
+    <string name="title_activity_cute_task_selector">CuteTaskSelectorActivity</string>
+    <string name="title_activity_test_task_selector">TestTaskSelectorActivity</string>
+    <string name="priority_label">Priority</string>
+    <string name="action_deadline_date_change">Change date</string>
+    <string name="list_spinner_label">Choose list</string>
+    <string name="action_deadline_time_change">Change Time</string>
+    <string name="remove_task">Remove</string>
+    <string name="edit_task">Edit</string>
+    <string name="edit_task_header">Edit task</string>
+    <string name="title_activity_board">BoardActivity</string>
+    <string name="list_name_label">List name</string>
+    <string name="edit_board_header">Edit board</string>
+    <string name="edit_positive">Edit</string>
+    <string name="blank_board">Blank Board</string>
+    <string name="empty_list_warning">No data found</string>
+    <string name="more">More</string>
+</resources>

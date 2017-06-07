@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ua.lelpel.pomobluelw">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".PomoBlueApplication">
+
+        <meta-data android:name="DATABASE" android:value="pomo_blue.db" />
+        <meta-data android:name="VERSION" android:value="2" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="ua.lelpel.pomobluelw.model" />
+
+
+        <activity
+            android:name=".ui.activities.TimerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".ui.activities.TimerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ua.lelpel.pomobluelw.ui.activities.TimerActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.TaskSelectorActivity"
+            android:label="@string/title_activity_swiped_tasks"
+            android:parentActivityName=".ui.activities.TimerActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ua.lelpel.pomobluelw.ui.activities.TimerActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.BoardActivity"
+            android:label="@string/title_activity_board"
+            android:parentActivityName=".ui.activities.TimerActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ua.lelpel.pomobluelw.ui.activities.TimerActivity" />
+        </activity>
+    </application>
+
+</manifest>

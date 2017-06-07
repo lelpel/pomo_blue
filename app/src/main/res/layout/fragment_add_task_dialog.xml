@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ua.lelpel.pomobluelw.ui.fragments.AddTaskDialog">
+
+    <TextView
+        android:id="@+id/list_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/list_chooser_spinner"
+        android:text="@string/list_spinner_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/deadline_time_picker"
+        android:layout_alignStart="@+id/deadline_time_label" />
+
+    <TextView
+        android:id="@+id/deadline_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/date_picker_button"
+        android:text="Time"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignBaseline="@+id/deadline_time_picker"
+        android:layout_alignBottom="@+id/deadline_time_picker"
+        android:layout_alignStart="@+id/deadline_date_label" />
+
+    <Button
+        android:id="@+id/deadline_date_picker"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/priority_seek_bar"
+        android:layout_marginEnd="25dp"
+        android:text="@string/action_deadline_date_change" />
+
+    <TextView
+        android:id="@+id/taskNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/task_name_input"
+        android:text="@string/task_name_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginStart="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/task_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/taskNameLabel"
+        android:layout_alignStart="@+id/taskNameLabel"
+        android:layout_alignEnd="@+id/deadline_date_picker" />
+
+    <TextView
+        android:id="@+id/priority_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/priority_seek_bar"
+        android:text="@string/priority_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/task_name_input"
+        android:layout_alignStart="@+id/task_name_input" />
+
+    <SeekBar
+        android:id="@+id/priority_seek_bar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:max="2"
+        android:progress="1"
+        android:layout_alignBottom="@+id/priority_label"
+        android:layout_alignEnd="@+id/deadline_time_picker" />
+
+    <TextView
+        android:id="@+id/deadline_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/taskNameLabel"
+        android:layout_below="@+id/priority_label"
+        android:layout_marginTop="14dp"
+        android:labelFor="@+id/date_picker_button"
+        android:text="Date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/deadline_time_picker"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/deadline_date_picker"
+        android:layout_below="@+id/deadline_date_picker"
+        android:text="@string/action_deadline_time_change" />
+
+    <Spinner
+        android:id="@+id/list_chooser_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_label"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="13dp"/>
+
+
+    <!--<TextView-->
+    <!--android:text="@string/task_name_label"-->
+    <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/taskNameLabel"-->
+    <!--android:labelFor="@+id/taskNameEditText"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_toEndOf="@+id/date_text_view"-->
+    <!--android:layout_marginTop="83dp" />-->
+
+    <!--<TextView-->
+    <!--android:text="@string/deadline_label"-->
+    <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/deadlineLabel"-->
+    <!--android:labelFor="@+id/deadlineEditText"/>-->
+
+    <!--<TextView-->
+    <!--android:text="TextView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/date_time_tv" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/date_text_view" />-->
+
+    <!--<Button-->
+    <!--android:text="@string/deadine_date"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/datePicker"-->
+    <!--android:layout_below="taskNameLabel"-->
+    <!--android:layout_toRightOf="@+id/date_text_view"-->
+    <!--android:layout_marginLeft="32dp" />-->
+    <!--<Button-->
+    <!--android:text="@string/deadine_time"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/timePicker"-->
+    <!--android:layout_below="datePicker"-->
+    <!--android:layout_toRightOf="@+id/date_text_view"-->
+    <!--android:layout_marginLeft="32dp" />-->
+
+
+    <!--<Spinner-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/list_combo_box"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_toEndOf="@+id/date_text_view" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/taskNameEditText"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:ems="10"-->
+    <!--android:inputType="textPersonName"-->
+    <!--android:text="@string/task_name_label"-->
+    <!--android:layout_below="timePicker"-->
+    <!--android:layout_toRightOf="@+id/date_text_view"-->
+    <!--android:layout_marginLeft="32dp" />-->
+
+</RelativeLayout>

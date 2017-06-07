@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_timer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ua.lelpel.pomobluelw.ui.activities.TimerActivity"
+    tools:showIn="@layout/app_bar_timer">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@android:style/TextAppearance.Material.Large"
+        android:id="@+id/taskName" />
+
+
+    <at.grabner.circleprogress.CircleProgressView
+        android:id="@+id/circleView"
+        android:layout_width="277dp"
+        android:layout_height="277dp"
+        CircleProgressView:cpv_autoTextSize="true"
+        CircleProgressView:cpv_barColor="@color/primary"
+        CircleProgressView:cpv_barWidth="35dp"
+        CircleProgressView:cpv_innerContourSize="0dp"
+        CircleProgressView:cpv_maxValue="100"
+        CircleProgressView:cpv_outerContourSize="0dp"
+        CircleProgressView:cpv_rimColor="@color/primary_light"
+        CircleProgressView:cpv_rimWidth="35dp"
+        CircleProgressView:cpv_seekMode="false"
+        CircleProgressView:cpv_showUnit="false"
+        CircleProgressView:cpv_spinColor="@color/primary"
+        CircleProgressView:cpv_textColor="@color/primary_dark"
+        CircleProgressView:cpv_textScale="1"
+        CircleProgressView:cpv_unitColor="@color/primary_light"
+        CircleProgressView:cpv_unitPosition="right_top"
+        CircleProgressView:cpv_unitScale="1"
+        CircleProgressView:cpv_value="10"
+        CircleProgressView:cpv_textMode="Text"
+        android:layout_below="@+id/taskName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/finished_pomodoros" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/finished_pomodoros"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="56dp">
+
+        <Button android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickStart"
+            android:text="@string/start"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_marginStart="12dp" />
+
+
+        <Button android:id="@+id/interrupt_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickInterrupt"
+            android:text="@string/interrupt"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_marginStart="40dp" />
+
+
+        <Button
+            android:id="@+id/reset_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:onClick="onClickReset"
+            android:text="@string/stop" />
+
+
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/interrupt_button"-->
+        <!--android:layout_alignStart="@+id/circleView"-->
+        <!--android:layout_marginStart="14dp"-->
+        <!--android:id="@+id/pause_button"-->
+        <!--style="@style/Widget.AppCompat.Button.Colored" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="22dp"-->
+        <!--android:id="@+id/next_stage_button"-->
+        <!--style="@style/Widget.AppCompat.Button.Colored"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignEnd="@+id/circleView" />-->
+</RelativeLayout>

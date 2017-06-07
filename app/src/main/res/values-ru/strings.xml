@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Таймер PomoBlue</string>
+    <string name="action_settings">Настройки</string>
+    <string name="navigation_drawer_close">Закрыть панель навигации</string>
+    <string name="navigation_drawer_open">Открыть панель навигации</string>
+    <string name="personal">Личные</string>
+    <string name="pinned">Закрепленные</string>
+    <string name="recent">Недавние</string>
+    <string name="title_activity_board_selector">Выбор доски</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="title_activity_stats">Статистика</string>
+    <string name="title_activity_task_selector">Выбор задачи</string>
+    <string name="boards">Доски</string>
+    <string name="tasks">Задачи</string>
+    <string name="stats">Статистика</string>
+    <string name="settings">Настройки</string>
+    <string name="share">Поделиться</string>
+    <string name="title_activity_swiped_tasks">Выбор задачи</string>
+    <string name="title_activity_swipe_task">Выбор задачи</string>
+    <string name="action_deadline_date_change">Изменить дату</string>
+    <string name="action_deadline_time_change">Изменить время</string>
+    <string name="add_task_header">Добавить задачу</string>
+    <string name="add_task_negative">Отмена</string>
+    <string name="add_task_positive">Добавить</string>
+    <string name="deadine_date">Дата дедлайна</string>
+    <string name="deadine_time">Время дедлайна</string>
+    <string name="deadline_label">Крайний срок</string>
+    <string name="edit_board_header">Редактировать доску</string>
+    <string name="edit_positive">Применить</string>
+    <string name="edit_task">Редактировать</string>
+    <string name="edit_task_header">Редактировать</string>
+    <string name="hello_blank_fragment"></string>
+    <string name="interrupt">Пауза</string>
+    <string name="list_name_label">Имя списка</string>
+    <string name="list_spinner_label">Выбрать список</string>
+    <string name="no_task">Задача не выбрана</string>
+    <string name="remove_task">Удалить</string>
+    <string name="start">Пуск</string>
+    <string name="stop">Сброс</string>
+    <string name="task_name_label">Название задачи</string>
+    <string name="title_activity_board">Списки задач</string>
+    <string name="priority_label">Приоритет</string>
+    <string name="more">Дополнительно</string>
+</resources>
